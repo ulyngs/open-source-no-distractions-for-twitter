@@ -1,0 +1,11 @@
+div[data-testid="sidebarColumn"] section[role="region"] {
+    display: none !important;
+}
+
+div[data-testid="sidebarColumn"]  aside[role="complementary"] {
+    display: none !important;
+}
+
+div[data-testid="sidebarColumn"] .css-1dbjc4n.r-1u4rsef.r-9cbz99.r-t23y2h.r-1phboty.r-rs99b7.r-ku1wi2.r-1bro5k0.r-1udh08x {
+    display: none !important;
+}
