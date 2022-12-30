@@ -1,0 +1,5 @@
+/************
+** TWITTER **
+************/
+/* hide trends by default */
+div[data-testid="sidebarColumn"] section[role="region"] {display: none; }

@@ -1,0 +1,34 @@
+{
+    "manifest_version": 2,
+    "default_locale": "en",
+
+    "name": "'No Distractions' for Twitter",
+    "description": "Hides distractions. Show hidden elements when you need them. Store your personal preferences.",
+    "version": "2.0",
+
+    "icons": {
+        "48": "images/icon-app-48.png",
+        "96": "images/icon-app-96.png",
+        "128": "images/icon-app-128.png",
+        "256": "images/icon-app-256.png",
+        "512": "images/icon-app-512.png"
+    },
+
+    "content_scripts": [{
+        "css": [ "style.css" ],
+        "js": [ "content.js" ],
+        "matches": [ "*://twitter.com/*", "*://mobile.twitter.com/*" ]
+    }],
+
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "images/icon-app-16.png",
+            "19": "images/icon-app-19.png",
+            "32": "images/icon-app-32.png",
+            "38": "images/icon-app-38.png"
+        }
+    },
+
+    "permissions": [ "storage", "tabs" ]
+}
